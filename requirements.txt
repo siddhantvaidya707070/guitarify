@@ -1,0 +1,17 @@
+# Guitarify — Top-level requirements
+# Install via:  pip install -r requirements.txt
+#
+# For a fully reproducible environment use requirements-lock.txt instead:
+#   pip install -r requirements-lock.txt
+
+basic-pitch==0.4.0
+tensorflow==2.15.*
+numpy==1.26.*
+librosa
+jams
+mir_eval
+pretty_midi
+scipy
+pandas
+matplotlib
+jupyter

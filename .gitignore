@@ -1,0 +1,61 @@
+# =============================================================================
+# Guitarify — .gitignore
+# =============================================================================
+
+# ── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Dataset Directories & Raw Media ──────────────────────────────────────────
+GuitarSet/
+data/
+datasets/
+*.wav
+*.mp3
+*.mp4
+*.flac
+*.ogg
+*.jams
+
+# ── Model Checkpoints & Caches ───────────────────────────────────────────────
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.h5
+*.pb
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+
+# ── OS & IDE Clutter ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ── Build & Distribution ─────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+.eggs/
+*.egg
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+*.log
+*.tmp
+.env
+
+# ── Exceptions: Keep These ───────────────────────────────────────────────────
+# Allow the N=1 baseline record to travel with the repo
+!results.csv
+!evaluation/results.csv
+!evaluation/note_matches.csv
+!basicpitch_clean.csv
